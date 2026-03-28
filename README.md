@@ -2,22 +2,12 @@
 
 статический html-отчет с инфографикой по тестам 2022 vs 2024.
 
-## локальный запуск
-
-```bash
-npm start
-```
-
-по умолчанию сервер слушает `PORT` или `3000`.
-
 ## что внутри
 
 - `public/index.html` — сам отчет
-- `server.js` — минимальный node-сервер для static deploy
-- `package.json` — стартовая команда
+- `Staticfile` — конфиг для static deploy на railway
 
-## быстрый деплой
+## деплой
 
-подходит для railway, render, fly.io и любых платформ, которым нужен `start` command.
-
-если хочешь залить на github pages, сервер не нужен: можно просто публиковать `public/index.html` как статический файл.
+репозиторий специально сделан как pure static site.
+railway должен брать `Staticfile` и отдавать содержимое папки `public`.
